@@ -1,3 +1,4 @@
+{{ if .IsNamedParams }}
 <div class="news-media news-media_condensed">
     <div class="news-media__inside">
         <div class="news-media__viewport">
@@ -10,3 +11,18 @@
     </div>
 
 </div>
+
+{{ else }}
+<div class="news-media news-media_condensed">
+    <div class="news-media__inside">
+        <div class="news-media__viewport">
+            <div class="news-media__preview"><img loading="lazy"
+                    class="alignnone size-1100x5616 wp-image-137693 news-media__image" src="{{.Get 0 }}" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+{{ end }}
