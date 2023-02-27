@@ -1,0 +1,13 @@
+baseURL: "https://repatriationbot.com"
+languageCode: en-en
+title: Repatriation Site
+theme: PaperMod
+params:
+  TocSide: 'left'
+  defaultTheme: auto  
+googleAnalytics: G-62ZGB2NRD1
+markup:
+  tableOfContents:
+    endLevel: 4
+    ordered: false
+    startLevel: 3
