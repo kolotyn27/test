@@ -1,5 +1,1 @@
-{{ if .IsNamedParams }}
-<div class="news-media__preview"><img loading="lazy" class="post image" src="{{ .Get 'src' }}" alt=""></div>
-{{ else }}
-<div class="news-media__preview"><img loading="lazy" class="post image" src="{{ .Get 0 }}" alt=""></div>
-{{ end }}
+<div class="news-media__preview"><img loading="lazy" class="post image" src="{{ index .Params 0 }}" alt=""></div>
